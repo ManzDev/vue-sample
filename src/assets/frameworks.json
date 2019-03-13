@@ -1,0 +1,95 @@
+[
+  {
+    "name": "Angular",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png",
+    "url": "https://angular.io/",
+    "bgcolor": "#dd1731"
+  },
+  {
+    "name": "React",
+    "image": "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png",
+    "url": "https://reactjs.org/",
+    "bgcolor": "#00d8fe",
+    "textcolor": "#111"
+  },
+  {
+    "name": "VueJS",
+    "image": "https://vuejs.org/images/logo.png",
+    "url": "https://vuejs.org/",
+    "bgcolor": "#41b883"
+  },
+  {
+    "name": "Ember",
+    "image": "https://upload.wikimedia.org/wikipedia/en/6/69/Ember.js_Logo_and_Mascot.png",
+    "url": "https://www.emberjs.com/",
+    "bgcolor": "#b88347",
+    "textcolor": "#111"
+  },
+  {
+    "name": "Polymer",
+    "image": "http://itech.folderit.net/wp-content/uploads/2016/03/polymer-300x206.png",
+    "url": "https://www.polymer-project.org/",
+    "bgcolor": "#303e9e"
+  },
+  {
+    "name": "Preact",
+    "image": "https://avatars0.githubusercontent.com/u/31190635?s=200&v=4",
+    "url": "https://preactjs.com/",
+    "bgcolor": "#663ab8"
+  },
+  {
+    "name": "MarkoJS",
+    "image": "https://markojs.com/logo-be720035.png",
+    "url": "https://markojs.com/",
+    "bgcolor": "#84b52d",
+    "textcolor": "#111"
+  },
+  {
+    "name": "AngularJS",
+    "image": "https://www.analiticaweb.es/wp-content/uploads/2015/03/AngularJS.png",
+    "url": "https://angularjs.org/",
+    "bgcolor": "#9e3d34"
+  },
+  {
+    "name": "Backbone",
+    "image": "https://www.codeforest.net/wp-content/uploads/2013/05/backbone.png",
+    "url": "https://backbonejs.org/",
+    "bgcolor": "#002a41"
+  },
+  {
+    "name": "Inferno",
+    "image": "https://avatars0.githubusercontent.com/u/14214240?s=400",
+    "url": "https://infernojs.org/",
+    "bgcolor": "#ff3232"
+  },
+  {
+    "name": "Mithril",
+    "image": "https://mithril.js.org/logo.svg",
+    "url": "https://mithril.js.org/",
+    "bgcolor": "#000000"
+  },
+  {
+    "name": "Aurelia",
+    "image": "https://aurelia.io/styles/images/aurelia-icon.svg",
+    "url": "https://aurelia.io/",
+    "bgcolor": "#ae2077"
+  },
+  {
+    "name": "Svelte",
+    "image": "https://avatars2.githubusercontent.com/u/23617963?s=200&v=4",
+    "url": "https://svelte.technology/",
+    "bgcolor": "#aa1f23"
+  },
+  {
+    "name": "Bobril",
+    "image": "https://raw.githubusercontent.com/Bobris/Bobril/master/logo.png",
+    "url": "https://bobril.com/",
+    "bgcolor": "#935f37"
+  },
+  {
+    "name": "Hybrids",
+    "image": "https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/spaces%2F-LRi6dy_R5jjO-6XNSUw%2Favatar.png?generation=1542667019676114&alt=media",
+    "url": "https://hybrids.js.org/",
+    "bgcolor": "#ee9464"
+  }
+]

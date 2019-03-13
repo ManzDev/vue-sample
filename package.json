@@ -1,0 +1,38 @@
+{
+  "name": "vue-sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html --open",
+    "clean": "rm -rf .cache dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "Vue single file components sample",
+  "dependencies": {
+    "assets": "^3.0.1",
+    "components": "^0.1.0",
+    "vue": "^2.6.8",
+    "vue-hot-reload-api": "^2.3.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@vue/component-compiler-utils": "^2.6.0",
+    "autoprefixer": "^9.4.10",
+    "eslint": "^5.15.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "postcss-font-magician": "^2.2.1",
+    "postcss-preset-env": "^6.6.0",
+    "stylelint": "^9.10.1",
+    "stylelint-config-standard": "^18.2.0",
+    "vue-template-compiler": "^2.6.8"
+  }
+}
