@@ -33,11 +33,13 @@ export default {
 <style lang="postcss" scoped>
   .preview {
     border: 3px solid #fff;
+    background: #222;
     width: 300px;
     height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
     justify-content: center;
 
     & h2 {

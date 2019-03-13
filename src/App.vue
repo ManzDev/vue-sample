@@ -28,12 +28,20 @@ export default {
     --bgcolor: #ddd;
     --textcolor: #fff;
 
-    background: #222;
+    background: linear-gradient(140deg, #495e54 30%, #35495d 40%, #4fc08c 80%);
+    height: 100vh;
   }
 
   #app {
     margin-top: 4em;
     display: flex;
     justify-content: center;
+  }
+
+  @media screen and (max-width: 800px) {
+    #app {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 </style>

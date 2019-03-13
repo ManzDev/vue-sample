@@ -34,6 +34,7 @@ export default {
     // preview() { return this.$root.$children[0].$refs.preview }
   },
   mounted() {
+    this.blip.volume = 0.2;
     document.head.innerHTML += `<link rel="prefetch" href="${this.element.image}">`;
     this.$el.style.setProperty('--bgcolor', this.element.bgcolor);
     if (this.element.textcolor)
@@ -58,11 +59,13 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #222;
     border: 1px solid #fff;
     width: 100px;
     height: 100px;
     color: #ddd;
     font-family: Arial, sans-serif;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
     transition:
       background 1s ease,
       color 0.2s ease-in-out;

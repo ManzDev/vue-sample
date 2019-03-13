@@ -28,7 +28,6 @@ export default {
   .lista {
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
-    width: 600px;
+    max-width: 600px;
   }
 </style>
