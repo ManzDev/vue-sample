@@ -22,9 +22,7 @@ export default {
   },
   methods: {
     setElement(e) {
-      this.name = e.name;
-      this.image = e.image;
-      this.url = e.url;
+      [this.name, this.image, this.url] = [e.name, e.image, e.url];
     }
   }
 }
