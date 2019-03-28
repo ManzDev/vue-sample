@@ -4,7 +4,7 @@
       v-for="(e,i) in elements"
       :key="i"
       :numid="i"
-      :element="elements[i]"
+      :element="e"
     ></fw-elemento>
   </div>
 </template>
