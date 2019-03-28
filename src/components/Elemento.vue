@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import { EventBus } from '/event-bus.js';
 import blip from '/assets/blip.mp3';
 import click from '/assets/click.mp3';
 export default {
@@ -16,7 +17,7 @@ export default {
   props: {
     element: {
       type: Object,
-      default: () => {}
+      default: () => ({})
     },
     numid: {
       type: Number,
@@ -30,7 +31,7 @@ export default {
     }
   },
   computed: {
-    preview() { return this.$parent.$parent.$refs.preview }
+    // preview() { return this.$parent.$parent.$refs.preview }
     // preview() { return this.$root.$children[0].$refs.preview }
   },
   mounted() {
@@ -42,7 +43,8 @@ export default {
   },
   methods: {
     show(id) {
-      this.preview.setElement(this.element);
+      // this.preview.setElement(this.element);
+      EventBus.$emit('click-element', this.element);
       this.click.currentTime = 0;
       this.click.play();
     },

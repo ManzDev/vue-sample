@@ -9,6 +9,8 @@
 import Lista from '/components/Lista';
 import Preview from '/components/Preview';
 import elements from '/assets/frameworks.json';
+import { EventBus } from '/event-bus.js';
+
 export default {
   name: 'App',
   components: {
@@ -19,6 +21,11 @@ export default {
     return {
       elements
     }
+  },
+  mounted() {
+    EventBus.$on('click-element', data => {
+      this.$refs.preview.setElement(data);
+    });
   }
 }
 </script>
