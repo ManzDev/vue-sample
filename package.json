@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html --open",
-    "build": "NODE_ENV=production parcel build src/index.html",
-    "winbuild": "set NODE_ENV=production && parcel build src/index.html",
+    "dev": "cross-env NODE_ENV=development parcel src/index.html --open",
+    "build": "cross-env NODE_ENV=production parcel build src/index.html",
     "clean": "rm -rf .cache dist"
   },
   "author": "Manz",
@@ -22,6 +21,7 @@
     "@babel/preset-env": "^7.3.4",
     "@vue/component-compiler-utils": "^2.6.0",
     "autoprefixer": "^9.4.10",
+    "cross-env": "^5.2.0",
     "eslint": "^5.15.1",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.16.0",
