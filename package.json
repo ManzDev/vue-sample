@@ -4,15 +4,15 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html --open",
+    "build": "NODE_ENV=production parcel build src/index.html",
+    "winbuild": "set NODE_ENV=production && parcel build src/index.html",
     "clean": "rm -rf .cache dist"
   },
-  "author": "",
+  "author": "Manz",
   "license": "ISC",
   "keywords": [],
   "description": "Vue single file components sample",
   "dependencies": {
-    "assets": "^3.0.1",
-    "components": "^0.1.0",
     "vue": "^2.6.8",
     "vue-hot-reload-api": "^2.3.3"
   },
