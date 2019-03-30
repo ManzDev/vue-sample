@@ -1,12 +1,8 @@
 <template>
   <div class="preview">
-    <h2>{{ name }}</h2>
-    <img
-      v-show="image"
-      :src="image"
-      :alt="name"
-    >
-    <a href="url">{{ url }}</a>
+    <h2>{{ element.name }}</h2>
+    <img v-show="element.image" :src="element.image" :alt="element.name">
+    <a :href="element.url">{{ element.url }}</a>
   </div>
 </template>
 
@@ -15,14 +11,16 @@ export default {
   name: 'FwPreview',
   data() {
     return {
-      name: '',
-      image: '',
-      url: ''
+      element: {
+        name: '',
+        image: '',
+        url: ''
+      }
     }
   },
   methods: {
     setElement(e) {
-      [this.name, this.image, this.url] = [e.name, e.image, e.url];
+      this.element = e;
     }
   }
 }
@@ -32,7 +30,7 @@ export default {
   .preview {
     border: 3px solid #fff;
     background: #222;
-    width: 300px;
+    min-width: 300px;
     height: 300px;
     display: flex;
     flex-direction: column;

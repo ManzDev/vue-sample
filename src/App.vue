@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <fw-preview ref="preview"></fw-preview>
-    <fw-lista></fw-lista>
+    <fw-lista :elements="elements"></fw-lista>
   </div>
 </template>
 
@@ -40,12 +40,13 @@ export default {
   }
 
   #app {
-    margin-top: 4em;
+    max-width: 900px;
+    margin: 4em auto;
     display: flex;
     justify-content: center;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 850px) {
     #app {
       flex-direction: column;
       align-items: center;

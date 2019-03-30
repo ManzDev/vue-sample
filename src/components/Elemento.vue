@@ -1,9 +1,5 @@
 <template>
-  <div
-    class="elemento"
-    @click="show(numid)"
-    @mouseenter="soundOver()"
-  >
+  <div class="elemento" @click="show(numid)" @mouseenter="play(blip)">
     {{ element.name }}
   </div>
 </template>
@@ -30,27 +26,24 @@ export default {
       click: new Audio(click)
     }
   },
-  computed: {
-    // preview() { return this.$parent.$parent.$refs.preview }
-    // preview() { return this.$root.$children[0].$refs.preview }
-  },
   mounted() {
     this.blip.volume = 0.2;
-    document.head.innerHTML += `<link rel="prefetch" href="${this.element.image}">`;
+    this.preloadImage(this.element.image);
     this.$el.style.setProperty('--bgcolor', this.element.bgcolor);
     if (this.element.textcolor)
       this.$el.style.setProperty('--textcolor', this.element.textcolor);
   },
   methods: {
-    show(id) {
-      // this.preview.setElement(this.element);
-      EventBus.$emit('click-element', this.element);
-      this.click.currentTime = 0;
-      this.click.play();
+    play(sound) {
+      sound.currentTime = 0;
+      sound.play();
     },
-    soundOver() {
-      this.blip.currentTime = 0;
-      this.blip.play();
+    preloadImage(image) {
+      document.head.innerHTML += `<link rel="prefetch" href="${image}">`;
+    },
+    show(id) {
+      EventBus.$emit('click-element', this.element);
+      this.play(this.click);
     }
   }
 }

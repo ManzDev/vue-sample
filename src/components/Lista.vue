@@ -16,9 +16,11 @@ export default {
   components: {
     'fw-elemento': Elemento
   },
-  data() {
-    return {
-      elements: this.$parent.elements
+  props: {
+    elements: {
+      type: Array,
+      default: () => ({}),
+      required: true
     }
   }
 }
@@ -28,6 +30,7 @@ export default {
   .lista {
     display: flex;
     flex-wrap: wrap;
-    max-width: 600px;
+    margin: auto 0;
+    max-width: 525px;
   }
 </style>
